@@ -3,7 +3,6 @@ layout: post
 title:  "Скандинавські казки про троллів"
 date: 31.03.2025
 categories: Міфологія
-tags: [hugogord]
 ---
 ![](/images/posts/2025-03-31-trolls-gift.jpg)
 # Казка «Подарунок троля»
