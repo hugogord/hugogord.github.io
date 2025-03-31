@@ -173,6 +173,7 @@ collections:
     sort_by: order
   services:
     output: true
+    sort_by: order
     permalink: /services/:slug/
 
 defaults:
