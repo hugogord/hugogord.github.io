@@ -1,0 +1,5 @@
+- name: Test with htmlproofer
+  run: |
+    bundle exec htmlproofer _site \
+      --disable-external \
+      --allow-missing-href
