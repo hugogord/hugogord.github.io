@@ -1,5 +1,27 @@
-- name: Test with htmlproofer
-  run: |
-    bundle exec htmlproofer _site \
-      --disable-external \
-      --allow-missing-href
+name: HTMLProofer
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  htmlproofer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+      - name: Test with htmlproofer
+        run: |
+          bundle exec htmlproofer _site \
+            --disable-external \
+            --allow-missing-href
