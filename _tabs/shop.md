@@ -72,7 +72,7 @@ layout: shop
   <h1 class="shop-title">Магічна крамниця</h1>
   
   {{ "> Натисніть кнопку, щоб перейти до категорії послуг." | markdownify | replace: '<blockquote>', '<blockquote class="prompt-tip">' }}
-  {{ "> Знижки до 50% на всі послуги в честь свята Valborgsmässoafton" | markdownify | replace: '<blockquote>', '<blockquote class="prompt-warning">' }}
+  <!-- {{ "> Знижки до 50% на всі послуги в честь свята Valborgsmässoafton" | markdownify | replace: '<blockquote>', '<blockquote class="prompt-warning">' }} -->
   
   <div class="category-grid">
     {% for service in site.services | sort_natural: 'order' %}
